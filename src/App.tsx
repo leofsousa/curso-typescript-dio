@@ -7,14 +7,18 @@ import {
   HStack,
   Text,
   VStack,
-} from '@chakra-ui/react';
-import {Card} from './components/Card';
+} from "@chakra-ui/react";
+import { Card } from "./components/Card";
+import { Header } from "./components/Header";
 
 function App() {
   return (
-    <Center minH="dvh">
-      <Card />
-    </Center>
+    <>
+      <Header />
+      <Box display="flex" minH="dvh" justifyContent="center" pt={50}>
+        <Card />
+      </Box>
+    </>
   );
 }
 
